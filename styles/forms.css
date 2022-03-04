@@ -54,12 +54,13 @@
     color: white;
 }
 
-.form-student p {
+#text-descript p {
     height: 40px;
     text-align: center;
     font-size: 18px;
     font-family: "calibri";
     line-height: 40px;
+    color: white;
 }
 
 .form-student a {
@@ -74,4 +75,3 @@
     background-color: teal;
     margin-top: 0.05%;
 }
-

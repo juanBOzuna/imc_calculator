@@ -55,27 +55,48 @@
 
                 <div class="form-student">
                     <form action="back.php" method="post">
-                        <h4>DATOS DE LA PERSONA </h4>
-                        
-                        <input class="digit-calc" type="text" name="name" placeholder="Ingrese su nombre" required>
+                    <table>
+                                <tr><td><h4>DATOS DE LA PERSONA </h4></td></tr>
 
-                        <input class="digit-calc" type="number" name="weight" placeholder="Digite su peso en kg" step="any"
-                            required>
-                        <br>
-                        <input class="digit-calc" type="number" name="height" placeholder="digite su altura en metros" step="any"
-                            required>
+                                <tr>
+                                    <td> <input class="digit-calc" type="text" name="name" placeholder="Ingrese su nombre" required></td>
+                                </tr>
 
-                        <p>Formulario hecho por <a href="https://github.com/juanBOzuna" target="_blank">Juan Barraza</a>
-                        </p>
-                        <input class="send-data" type="submit" name="" id="">
+                                <tr>
+                                    <td> <input class="digit-calc" type="number" name="weight" placeholder="Digite su peso en kg" step="any"required></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input class="digit-calc" type="number" name="height" placeholder="digite su altura en metros" step="any"required></td>
+                                </tr>
+
+                                <tr>
+                                    <th id="text-descript" ><p >Formulario hecho por <a href="https://github.com/juanBOzuna" target="_blank">Juan Barraza</a></p></th>
+                                </tr>
+
+                                <tr>
+                                    <th>
+                                    <input class="send-data" type="submit" name="" id="">
+                                    </th>
+                                </tr>
+                            </table>
                     </form>
                 </div>
 
                 <div class="form-result">
-                    <h4><?= $resultTitle ?> </h4>
-                    <h3><?= $msj ?> </h3>
+                   <table>
+                       <tr>
+                            <th>  <h4><?= $resultTitle ?> </h4></th>
+                       </tr>
 
-                    <img src= <?= "assets/". $img?> alt="" style="width:<?= $width?>%;object-fit= contain";" id="img-after-calc"  >
+                       <tr>
+                            <th> <h3 style="color:white" ><?= $msj ?> </h3></th>
+                       </tr>
+
+                       <tr>
+                            <th  > <img src= <?= "assets/". $img?> alt="" style="width:<?= $width?>%;object-fit= contain";" id="img-after-calc"  ></th>
+                       </tr>
+                   </table>
                 </div>
 
             </div>
